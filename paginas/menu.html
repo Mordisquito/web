@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Carlos Abraham Ojeda Pereira, Lirio Yesai Alvarado Flores, Nallely Patricia Diaz Jimenez, Yazmin Guadalupe Caamal Franco">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mordisquito - Café & Postres - Menu</title>
+    <meta name="description" content="Menu de la cafeteria Mordisquito">
+    <meta name="keywords" content="Cafeteria, Alimentos, Comida online, Mordisquito, Menu">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <!-- Logo -->
+            <div class="logo">
+                <img src="../imagenes/logoCafe.png" alt="Logo Mordisquito">
+                <h1>Mordisquito</h1>
+            </div>
+            <!-- Barra de navegación -->
+            <ul>
+                <li><a href="../index.html">🏠 Inicio</a></li>
+                <li><a href="../paginas/menu.html" class="active">🍴 Menú</a></li>
+                <li><a href="../paginas/opiniones.html">🌟 Opiniones</a></li>
+                <li><a href="../paginas/nosotros.html">📞 Sobre Nosotros</a></li>
+            </ul>
+            <!-- Botón del carrito -->
+            <button class="carrito" onclick="window.location.href='../paginas/carrito.html'">🛒</button>
+        </nav>
+    </header>
+
+
+<section class="container_menu">
+    <h2>Elige tu comida</h2>
+
+    <!-- Filtros de Campus y facultades -->
+    <div class="filtros">
+        <label for="campus">Selecciona tu campus:</label>
+        <select id="campus">
+            <option value="sociales">Ciencias Sociales, Económico Administrativas y Humanidades </option>
+        </select>
+
+        <label for="facultad">Selecciona tu facultad:</label>
+        <select id="facultad">
+            <option value="fca">Facultad de Contaduría y Administración</option>
+            <option value="fcp"> Facultad de Ciencias Antropológicas</option>
+            <option value="fde">Facultad de Educación</option>
+            <option value="fd">Facultad de Derecho</option>
+            <option value="fe">Facultad de Economía</option>
+            <option value="fdp">Facultad de Psicología</option>
+        </select>
+    </div>
+
+    <!-- Sección de Categorías -->
+    <div class="categorias_nav">
+        <ul>
+            <li><a href="#" class="active">🍳 Desayuno</a></li>
+            <li><a href="#">🍔 Almuerzo</a></li>
+            <li><a href="#">🥤 Bebidas</a></li>
+            <li><a href="#">🍟 Snack</a></li>
+        </ul>
+    </div>
+
+    <!-- Productos -->
+    <div class="productos_fila">
+        <!-- Producto 1 -->
+        <div class="card_producto">
+            <img src="../imagenes/chilaquiles.jpg" alt="Chilaquiles">
+            <div class="card_info">
+                <h3>Chilaquiles</h3>
+                <p>Tortilla frita con salsa roja o verde, queso y crema.</p>
+                <span>$50.00</span>
+                <button onclick="window.location.href='../paginas/carrito.html'">Añadir al carrito</button>
+            </div>
+        </div>
+        <!-- Producto 2 -->
+        <div class="card_producto">
+            <img src="../imagenes/molletes.jpg" alt="Molletes">
+            <div class="card_info">
+                <h3>Molletes</h3>
+                <p>Bolillo con frijoles, champiñon, carne y queso derretido.</p>
+                <span>$45.00</span>
+                <button onclick="window.location.href='../paginas/carrito.html'">Añadir al carrito</button>
+            </div>
+        </div>
+        <!-- Producto 3 -->
+        <div class="card_producto">
+            <img src="../imagenes/quesadillas.jpg" alt="Quesadillas">
+            <div class="card_info">
+                <h3>Quesadillas</h3>
+                <p>Tortillina blanca rellena de jamón y queso derretido.</p>
+                <span>$30.00</span>
+                <button onclick="window.location.href='../paginas/carrito.html'">Añadir al carrito</button>
+            </div>
+        </div>
+        <!-- Producto 4 -->
+        <div class="card_producto">
+            <img src="../imagenes/sandwich.jpg" alt="sandwich">
+            <div class="card_info">
+                <h3>Sandwich</h3>
+                <p>Pan suave relleno de jamón y queso.</p>
+                <span>$25.00</span>
+                <button onclick="window.location.href='../paginas/carrito.html'">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="productos_fila">
+        <!-- Producto 5 -->
+        <div class="card_producto">
+            <img src="../imagenes/tortas.png" alt="Tortas">
+            <div class="card_info">
+                <h3>Tortas</h3>
+                <p>Bolillo relleno de jamón y queso.</p>
+                <span>$35.00</span>
+                <button onclick="window.location.href='../paginas/carrito.html'">Añadir al carrito</button>
+            </div>
+        </div>
+        <!-- Producto 6 -->
+        <div class="card_producto">
+            <img src="../imagenes/waffles.jpg" alt="waffles">
+            <div class="card_info">
+                <h3>waffles</h3>
+                <p>Pan crujiente y delicioso de huevo y leche.</p>
+                <span>$40.00</span>
+                <button onclick="window.location.href='../paginas/carrito.html'">Añadir al carrito</button>
+            </div>
+        </div>
+        <!-- Producto 7 -->
+        <div class="card_producto">
+            <img src="../imagenes/ensalada de frutas.png" alt="Ensalada de frutas">
+            <div class="card_info">
+                <h3>Ensalada de frutas</h3>
+                <p>Ensalada de fresa, platano y kiwi.</p>
+                <span>$35.00</span>
+                <button onclick="window.location.href='../paginas/carrito.html'">Añadir al carrito</button>
+            </div>
+        </div>
+        <!-- Producto 8 -->
+        <div class="card_producto">
+            <img src="../imagenes/hotcakes.jpg" alt="Hotcakes">
+            <div class="card_info">
+                <h3>Hotcakes</h3>
+                <p>Pan suave de huevo y leche con miel.</p>
+                <span>$25.00</span>
+                <button onclick="window.location.href='../paginas/carrito.html'">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="contacto_contenido">
+        <div class="contacto_info">
+            <h2>📍 Contáctanos</h2>
+            <p>Calle 124A x 12 y 47, Mérida, Yucatán</p>
+            <p>📞 (999) 489-2417 | ✉️ cafeteria@mordisquito.com</p>
+        </div>
+        <div class="redes_sociales">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </div>
+    <p class="footer_copy">© 2025 Mordisquito. Todos los derechos reservados.</p>
+</footer>
+
+
+</body>
+</html>

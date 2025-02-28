@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Carlos Abraham Ojeda Pereira, Lirio Yesai Alvarado Flores, Nallely Patricia Diaz Jimenez, Yazmin Guadalupe Caamal Franco">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mordisquito - Café & Postres - Carrito</title>
+    <meta name="description" content="Carrito de compras de la cafeteria Mordisquito">
+    <meta name="keywords" content="Cafeteria, Alimentos, Comida Online, Mordisquito, Carrito De compras">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <!-- Logo -->
+            <div class="logo">
+                <img src="../imagenes/logoCafe.png" alt="Logo Mordisquito">
+                <h1>Mordisquito</h1>
+            </div>
+            <!-- Barra de navegación -->
+            <ul>
+                <li><a href="../index.html">🏠 Inicio</a></li>
+                <li><a href="../paginas/menu.html">🍴 Menú</a></li>
+                <li><a href="../paginas/opiniones.html">🌟 Opiniones</a></li>
+                <li><a href="../paginas/nosotros.html">📞 Sobre Nosotros</a></li>
+            </ul>
+            <!-- Botón del carrito -->
+            <button class="carrito active" onclick="window.location.href='../paginas/carrito.html'">🛒</button>
+        </nav>
+    </header>
+
+
+
+<section class="container_carrito">
+    <!-- Título del Carrito -->
+    <div class="container_carrito_titulo">
+        <h2>Carrito de Compras</h2>
+    </div>
+
+    <!-- Tabla del Carrito -->
+    <div class="container_carrito_tabla">
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Total</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="producto_info">
+                            <img src="../imagenes/chilaquiles.jpg" alt="Chilaquiles">
+                            <span>Chilaquiles</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container_cantidad">
+                            <button>-</button>
+                            <input type="number" value="1" min="1" class="cantidad" disabled>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>$50.00</td>
+                    <td>$50.00</td>
+                    <td><button class="eliminar">Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="producto_info">
+                            <img src="../imagenes/tortas.png" alt="Tortas">
+                            <span>Tortas</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container_cantidad">
+                            <button>-</button>
+                            <input type="number" value="1" min="1" class="cantidad" disabled>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>$35.00</td>
+                    <td>$35.00</td>
+                    <td><button class="eliminar">Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="producto_info">
+                            <img src="../imagenes/molletes.jpg" alt="Molletes">
+                            <span>Molletes</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container_cantidad">
+                            <button>-</button>
+                            <input type="number" value="1" min="1" class="cantidad" disabled>
+                            <button>+</button>
+                        </div>
+                    </td>
+                    <td>$45.00</td>
+                    <td>$45.00</td>
+                    <td><button class="eliminar">Eliminar</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Sección de Métodos de Pago -->
+    <div class="container_carrito_seccion_pago">
+        <div class="metodo_pago">
+            <h4>Selecciona el método de pago</h4>
+            <div class="pago_opcion">
+                <input type="radio" id="tarjeta" name="metodo_pago" checked>
+                <label for="tarjeta">Tarjeta de Crédito/Débito</label>
+            </div>
+            <div class="info_pago">
+                <img src="../imagenes/tarjeta.png" alt="Tarjeta de Crédito">
+                <span>Visa, MasterCard, AMEX</span>
+            </div>
+            <div class="pago_opcion">
+                <input type="radio" id="efectivo" name="metodo_pago">
+                <label for="efectivo">Efectivo</label>
+            </div>
+            <div class="pago_opcion">
+                <input type="radio" id="creditos" name="metodo_pago">
+                <label for="creditos">Créditos Mordisquito</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Campo para aplicar cupón -->
+    <div class="container_cupon">
+        <input type="text" placeholder="Código de cupón">
+        <button>Aplicar Cupón</button>
+    </div>
+
+    <!-- Total y Botón de Pagar -->
+    <div class="container_carrito_total_y_pagar">
+        <div class="container_total">
+            <h3>Total: <span>$130.00 MXN</span></h3>
+        </div>
+        <div class="boton_pagar_container">
+            <button class="boton_pagar">Pagar</button>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="contacto_contenido">
+        <div class="contacto_info">
+            <h2>📍 Contáctanos</h2>
+            <p>Calle 124A x 12 y 47, Mérida, Yucatán</p>
+            <p>📞 (999) 489-2417 | ✉️ cafeteria@mordisquito.com</p>
+        </div>
+        <div class="redes_sociales">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </div>
+    <p class="footer_copy">© 2025 Mordisquito. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Carlos Abraham Ojeda Pereira, Lirio Yesai Alvarado Flores, Nallely Patricia Diaz Jimenez, Yazmin Guadalupe Caamal Franco">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mordisquito - Café & Postres - Opiniones</title>
+    <meta name="description" content="Opiniones sobre Mordisquito - Café & Postres">
+    <meta name="keywords" content="Resenias, Opiniones, Mordisquito, Café, Comida Online">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <!-- Logo -->
+            <div class="logo">
+                <img src="../imagenes/logoCafe.png" alt="Logo Mordisquito">
+                <h1>Mordisquito</h1>
+            </div>
+            <!-- Barra de navegación -->
+            <ul>
+                <li><a href="../index.html">🏠 Inicio</a></li>
+                <li><a href="../paginas/menu.html">🍴 Menú</a></li>
+                <li><a href="../paginas/opiniones.html" class="active">🌟 Opiniones</a></li>
+                <li><a href="../paginas/nosotros.html" >📞 Sobre Nosotros</a></li>
+            </ul>
+            <!-- Botón del carrito -->
+            <button class="carrito" onclick="window.location.href='../paginas/carrito.html'">🛒</button>
+        </nav>
+    </header>
+
+    <!-- Sección de Filtrar Opiniones -->
+    <section class="container_resenia_filtrar_opiniones">
+        <h2>Filtrar Opiniones</h2>
+        <form>
+           
+            <label for="campus">Selecciona tu campus:</label>
+            <select id="campus">
+            <option value="sociales">Ciencias Sociales, Económico Administrativas y Humanidades </option>
+        </select>
+
+            <label for="facultad">Facultad:</label>
+            <select id="facultad">
+                <option value="fca">Facultad de Contaduría y Administración</option>
+                <option value="fcp"> Facultad de Ciencias Antropológicas</option>
+                <option value="fde">Facultad de Educación</option>
+                <option value="fd">Facultad de Derecho</option>
+                <option value="fe">Facultad de Economía</option>
+                <option value="fdp">Facultad de Psicología</option>
+            </select>
+            
+
+            <label for="favoritos">Popularidad o fecha:</label>
+            <select id="favoritos">
+                <option value="favoritos">Más favoritos</option>
+                <option value="menos_favoritos">Menos favoritos</option>
+                <option value="mas_nuevos">Más nuevos</option>
+                <option value="mas_antiguos">Menos antiguos</option>
+            </select>
+            <button type="submit">Aplicar Filtros</button>
+        </form>
+    </section>
+
+    <!-- Sección de Opiniones -->
+    <section class="container_resenia_opiniones">
+        <h2>⭐ Opiniones de clientes más populares</h2>
+
+        <!-- Contenedor de Comentarios -->
+        <div class="container_resenia_comentarios">
+            <div class="resenia_comentario">
+                <img src="../imagenes/alumno1.jpg" alt="Pedro M.">
+                <p>"Los postres son irresistibles." - <strong>Pedro M.</strong></p>
+                <div class="resenia_estrellas">⭐⭐⭐⭐⭐</div>
+                <p class="resenia_ubicacion">📍 Cafeteria Mordisquito</p>
+                <div class="resenia_producto">Producto reseñado: Waffles</div>
+                <div class="resenia_feedback">
+                    <button class="resenia_like">👍 Me gusta <span>120</span></button>
+                    <button class="resenia_dislike">👎 No me gusta <span>5</span></button>
+                </div>
+            </div>
+
+            <div class="resenia_comentario">
+                <img src="../imagenes/alumna1.jpg" alt="Andrea G.">
+                <p>"La ensalada rusa es deliciosa, se nota la calidad." - <strong>Andrea G.</strong></p>
+                <div class="resenia_estrellas">⭐⭐⭐⭐</div>
+                <p class="resenia_ubicacion">📍 Cafeteria Mordisquito</p>
+                <div class="resenia_producto">Producto reseñado: Ensalada Rusa</div>
+                <div class="resenia_feedback">
+                    <button class="resenia_like">👍 Me gusta <span>85</span></button>
+                    <button class="resenia_dislike">👎 No me gusta <span>8</span></button>
+                </div>
+            </div>
+
+            <div class="resenia_comentario">
+                <img src="../imagenes/alumna2.jpg" alt="Sofía L.">
+                <p>"Las hojaldras son mis favoritos, crujiente y delicioso." - <strong>Sofía L.</strong></p>
+                <div class="resenia_estrellas">⭐⭐⭐⭐⭐</div>
+                <p class="resenia_ubicacion">📍 Cafeteria Mordisquito</p>
+                <div class="resenia_producto">Producto reseñado: Hojaldras</div>
+                <div class="resenia_feedback">
+                    <button class="resenia_like">👍 Me gusta <span>95</span></button>
+                    <button class="resenia_dislike">👎 No me gusta <span>3</span></button>
+                </div>
+            </div>
+
+            <div class="resenia_comentario">
+                <img src="../imagenes/alumno2.jpg" alt="Carlos V.">
+                <p>“Los chilaquiles tienen un sabor único, de verdad tienen que probarlas” - <strong>Carlos V.</strong></p>
+                <div class="resenia_estrellas">⭐⭐⭐⭐⭐</div>
+                <p class="resenia_ubicacion">📍 Cafeteria Mordisquito</p>
+                <div class="resenia_producto">Producto reseñado: Chilaquiles</div>
+                <div class="resenia_feedback">
+                    <button class="resenia_like">👍 Me gusta <span>150</span></button>
+                    <button class="resenia_dislike">👎 No me gusta <span>2</span></button>
+                </div>
+            </div>
+
+            <div class="resenia_comentario">
+                <img src="../imagenes/alumna3.jpg" alt="Lucía F.">
+                <p>“Amigos en verdad tienen que probar el empanizado de la cafetería, un 10/10” - <strong>Lucía F.</strong></p>
+                <div class="resenia_estrellas">⭐⭐⭐⭐</div>
+                <p class="resenia_ubicacion">📍 Cafeteria Mordisquito</p>
+                <div class="resenia_producto">Producto reseñado: Orden de Empanizado</div>
+                <div class="resenia_feedback">
+                    <button class="resenia_like">👍 Me gusta <span>120</span></button>
+                    <button class="resenia_dislike">👎 No me gusta <span>4</span></button>
+                </div>
+            </div>
+
+            <div class="resenia_comentario">
+                <img src="../imagenes/alumno3.jpg" alt="Juan R.">
+                <p>“Los Hot Cakes son una excelente opción de desayuno, excelente servicio” - <strong>Juan R.</strong></p>
+                <div class="resenia_estrellas">⭐⭐⭐⭐⭐</div>
+                <p class="resenia_ubicacion">📍 Cafeteria Mordisquito</p>
+                <div class="resenia_producto">Producto reseñado: Hot Cakes</div>
+                <div class="resenia_feedback">
+                    <button class="resenia_like">👍 Me gusta <span>110</span></button>
+                    <button class="resenia_dislike">👎 No me gusta <span>6</span></button>
+                </div>
+            </div>
+
+            <div class="resenia_comentario">
+                <img src="../imagenes/alumna4.jpg" alt="Ana G.">
+                <p>“Recomiendo mucho los molletes, son deliciosos, mis favoritos!”- <strong>Ana G.</strong></p>
+                <div class="resenia_estrellas">⭐⭐⭐⭐</div>
+                <p class="resenia_ubicacion">📍 Cafeteria Mordisquito</p>
+                <div class="resenia_producto">Producto reseñado: Molletes</div>
+                <div class="resenia_feedback">
+                    <button class="resenia_like">👍 Me gusta <span>95</span></button>
+                    <button class="resenia_dislike">👎 No me gusta <span>2</span></button>
+                </div>
+            </div>
+
+            <div class="resenia_comentario">
+                <img src="../imagenes/alumno4.jpg" alt="David P.">
+                <p>“Excelente servicio y variedad en productos de la cafetería, me encantan las hamburguesas!” - <strong>David P.</strong></p>
+                <div class="resenia_estrellas">⭐⭐⭐⭐⭐</div>
+                <p class="resenia_ubicacion">📍 Cafeteria Mordisquito</p>
+                <div class="resenia_producto">Producto reseñado: Hamburguesa</div>
+                <div class="resenia_feedback">
+                    <button class="resenia_like">👍 Me gusta <span>140</span></button>
+                    <button class="resenia_dislike">👎 No me gusta <span>3</span></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Paginación -->
+        <div class="resenia_paginacion">
+            <button>Página 1</button>
+            <button>Página 2</button>
+            <button>Página 3</button>
+        </div>
+    </section>
+
+    <!-- Formulario de Comentarios -->
+    <section class="container_formulario_resenia">
+        <h2>¡Deja tu comentario!</h2>
+        <form>
+            <label for="nombre">Tu nombre:</label>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre">
+            
+            <label for="comentario">Tu reseña:</label>
+            <textarea id="comentario" placeholder="Escribe tu reseña aquí..."></textarea>
+            
+            <label for="producto">Producto reseñado:</label>
+        <select id="producto">
+                <option value="cafe">Ensalada de Frutas</option>
+                <option value="tarta">Sandwich</option>
+                <option value="croissant">Chilaquiles</option>
+            </select> 
+
+            <label for="campus">Selecciona tu campus:</label>
+            <select id="campus">
+            <option value="sociales">Ciencias Sociales, Económico Administrativas y Humanidades </option>
+        </select>
+
+            <label for="facultad">Facultad:</label>
+            <select id="facultad">
+                <option value="fca">Facultad de Contaduría y Administración</option>
+                <option value="fcp"> Facultad de Ciencias Antropológicas</option>
+                <option value="fde">Facultad de Educación</option>
+                <option value="fd">Facultad de Derecho</option>
+                <option value="fe">Facultad de Economía</option>
+                <option value="fdp">Facultad de Psicología</option>
+            </select>
+
+            <label for="estrellas">Calificación:</label>
+            <select id="estrellas">
+                <option value="5">⭐⭐⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="1">⭐</option>
+            </select>
+            
+            <button type="submit">Enviar reseña</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contacto_contenido">
+            <div class="contacto_info">
+                <h2>📍 Contáctanos</h2>
+                <p>Calle 124A x 12 y 47, Mérida, Yucatán</p>
+                <p>📞 (999) 489-2417 | ✉️ cafeteria@mordisquito.com</p>
+            </div>
+            <div class="redes_sociales">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+        <p class="footer_copy">© 2025 Mordisquito. Todos los derechos reservados.</p>
+    </footer>
+    
+    
+</body>
+</html>
